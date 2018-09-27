@@ -4,8 +4,8 @@ const solveEquation = require('./src/index');
 
 describe('Solve quadratic equation', () => {
   it('1', () => {
-    const solutions = solveEquation('-20 * x^2 - 108797540 * x - 130011773690520');
-    assert.deepEqual(solutions, [-3667291, -1772586]);
+    const solutions = solveEquation('2 * x^2 - 10 * x + 12');
+    assert.deepEqual(solutions, [2,3]);
   });
   
   it('2', () => {
@@ -999,7 +999,7 @@ describe('Solve quadratic equation', () => {
   });
   
   it('200', () => {
-    const solutions = solveEquation('-99 * x^2 - 731003031 * x - 1209142706447412');
+    const solutions = solveEquation('-99 * x^2 - 731003031 * x - 1209142706447412n');
     assert.deepEqual(solutions, [-4882236, -2501633]);
   });
 });
